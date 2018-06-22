@@ -1,0 +1,28 @@
+
+<h2>Edit the story</h2>
+<button {{action 'createNewBlock' model}}>Add New block </button>
+{{#each model.adapterError.errors as |error|}}
+  <div class="error">{{error.detail}}</div>
+{{/each}}
+{{input  type="text"
+  id="articleName" valueBinding="model.articleName"
+  placeholder="What needs to be done?" }}
+
+
+<br/>
+<br/>
+
+{{#each model.blocks as |b|}}
+{{input  type="text"
+  class="blockTitle" valueBinding="b.blockTitle"
+  placeholder="Block Title" }}
+<br/>
+<br/>
+{{textarea
+  class="blockContent" valueBinding="b.blockContent"
+  placeholder="Block Content"}}
+  <br/>
+  <br/>
+{{/each}}
+<button {{action 'saveArticle' model}}>Save Article</button>
+{{outlet}}

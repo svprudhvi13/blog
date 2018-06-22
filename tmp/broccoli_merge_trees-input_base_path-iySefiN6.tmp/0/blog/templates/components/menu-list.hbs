@@ -1,0 +1,15 @@
+
+{{#each articles as |article|}}
+<article class="listing">
+  <br/>
+{{#link-to "article" (query-params articleId= article.articleId)}}
+{{article.articleName}}
+
+<!-- {{/link-to}}
+  {{#each article.blocks as |b|}}
+{{b.blockContent}}
+{{/each}} -->
+
+</article>
+{{/each}}
+{{outlet}}
