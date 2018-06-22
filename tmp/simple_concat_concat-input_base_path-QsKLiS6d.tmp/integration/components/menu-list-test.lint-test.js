@@ -1,4 +1,0 @@
-QUnit.test('integration/components/menu-list-test.js', function(assert) {
-  assert.expect(1);
-  assert.ok(true, 'integration/components/menu-list-test.js should pass ESLint\n\n');
-});

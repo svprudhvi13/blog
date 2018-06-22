@@ -1,8 +1,0 @@
-define("blog/templates/create-article", ["exports"], function (exports) {
-  "use strict";
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  exports.default = Ember.HTMLBars.template({ "id": "w5yiRfbw", "block": "{\"symbols\":[\"b\",\"error\"],\"statements\":[[0,\"\\n\"],[6,\"h2\"],[8],[0,\"Write a new story\"],[9],[0,\"\\n\"],[6,\"button\"],[3,\"action\",[[21,0,[]],\"createNewBlock\",[22,[\"model\"]]]],[8],[0,\"Add New block \"],[9],[0,\"\\n\"],[6,\"br\"],[8],[9],[0,\"\\n\"],[4,\"each\",[[22,[\"model\",\"adapterError\",\"errors\"]]],null,{\"statements\":[[0,\"  \"],[6,\"div\"],[10,\"class\",\"error\"],[8],[1,[21,2,[\"detail\"]],false],[9],[0,\"\\n\"]],\"parameters\":[2]},null],[1,[26,\"input\",null,[[\"type\",\"id\",\"value\",\"placeholder\"],[\"text\",\"articleName\",[22,[\"model\",\"articleName\"]],\"What needs to be done?\"]]],false],[0,\"\\n\\n\\n\"],[6,\"br\"],[8],[9],[0,\"\\n\"],[6,\"br\"],[8],[9],[0,\"\\n\\n\"],[4,\"each\",[[22,[\"model\",\"blocks\"]]],null,{\"statements\":[[1,[26,\"input\",null,[[\"type\",\"class\",\"value\",\"placeholder\"],[\"text\",\"blockTitle\",[21,1,[\"blockTitle\"]],\"Block Title\"]]],false],[0,\"\\n\"],[6,\"br\"],[8],[9],[0,\"\\n\"],[6,\"br\"],[8],[9],[0,\"\\n\"],[1,[26,\"textarea\",null,[[\"class\",\"value\",\"placeholder\"],[\"blockContent\",[21,1,[\"blockContent\"]],\"Block Content\"]]],false],[0,\"\\n  \"],[6,\"br\"],[8],[9],[0,\"\\n  \"],[6,\"br\"],[8],[9],[0,\"\\n\"]],\"parameters\":[1]},null],[6,\"button\"],[3,\"action\",[[21,0,[]],\"saveArticle\",[22,[\"model\"]]]],[8],[0,\"Save Article\"],[9],[0,\"\\n\\n\"],[1,[20,\"outlet\"],false],[0,\"\\n\"]],\"hasEval\":false}", "meta": { "moduleName": "blog/templates/create-article.hbs" } });
-});
